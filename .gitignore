@@ -1,0 +1,7 @@
+.DS_Store
+*.swp
+
+.merlin
+_build/
+dune-project
+lib/version.ml
