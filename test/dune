@@ -1,2 +1,6 @@
 (test
- (name xkcd936))
+ (name lines)
+  (libraries
+    Lib bigstring
+  )
+)

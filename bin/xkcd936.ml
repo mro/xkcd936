@@ -12,6 +12,22 @@
  * read the wordlist in it's entirety.
  *)
 
+open Bigarray
+open Lib
+
 let () =
-  print_endline "Hello, World!"
+  Random.self_init ();
+  let fd = Unix.openfile "worte.txt" [Unix.O_RDONLY] 0 in
+  let mf = Unix.map_file fd char c_layout false [|-1|] in
+  let arr = array1_of_genarray mf in
+  let cnt = Array1.dim arr in
+  []
+    |> List.cons (Random.int cnt)
+    |> List.cons (Random.int cnt)
+    |> List.cons (Random.int cnt)
+    |> List.cons (Random.int cnt)
+    |> List.map (fun idx -> Lines.line arr cnt idx)
+    |> String.concat "-"
+    |> print_endline;
+  Unix.close fd
 
