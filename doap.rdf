@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns="http://usefulinc.com/ns/doap#">
+  <Project>
+    <name>xkcd936</name>
+    <shortdesc xml:lang="en">🐫 🔐 Generate word combinations like in xkcd.com/936</shortdesc>
+    <homepage rdf:resource="https://xkcd.com/936"/>
+    <programming-language>OCaml</programming-language>
+    <bug-database rdf:resource="https://code.mro.name/mro/xkcd936/issues"/>
+    <wiki rdf:resource="https://code.mro.name/mro/xkcd936/wiki"/>
+    <maintainer rdf:resource="https://code.mro.name/mro"/>
+    <description xml:lang="en">Generate random word combinations from a linefeed-separated list `words.txt` like
+e.g. from https://github.com/davidak/wortliste
+
+```
+$ ./xkcd936
+Kartoffelkäferbefall-Altersteilzeitregelung-auseinanderbersten-Gezücht
+```
+
+If that sounds odd, see https://xkcd.com/936/
+
+Caution: this approach has a statistical bias toward longer words but avoids to
+actually read the wordlist (O(1), sic!), so it may be as big as you like.
+
+## Similar
+
+* λλ= https://github.com/utgarda/correct-unicorn
+* ☕️ https://github.com/maandree/correctpony
+</description>
+    <repository>
+      <GitRepository>
+        <browse rdf:resource="https://code.mro.name/mro/xkcd936"/>
+        <location rdf:resource="https://code.mro.name/mro/xkcd936.git"/>
+      </GitRepository>
+    </repository>
+    <repository>
+      <GitRepository>
+        <browse rdf:resource="https://github.com/mro/xkcd936"/>
+      </GitRepository>
+    </repository>
+    <repository>
+      <GitRepository>
+        <browse rdf:resource="https://gitlab.com/mro/xkcd936"/>
+      </GitRepository>
+    </repository>
+    <repository>
+      <GitRepository>
+        <browse rdf:resource="https://notabug.org/mro/xkcd936"/>
+      </GitRepository>
+    </repository>
+    <repository>
+      <GitRepository>
+        <browse rdf:resource="https://codeberg.org/mro/xkcd936"/>
+      </GitRepository>
+    </repository>
+    <repository>
+      <GitRepository>
+        <browse rdf:resource="https://repo.or.cz/xkcd936.git"/>
+      </GitRepository>
+    </repository>
+  </Project>
+</rdf:RDF>
