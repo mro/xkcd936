@@ -8,12 +8,8 @@ let () =
   let mf = Unix.map_file fd char c_layout false [|-1|] in
   let arr = array1_of_genarray mf in
   let len = Array1.dim arr in
-  []
-    |> List.cons (Random.int len)
-    |> List.cons (Random.int len)
-    |> List.cons (Random.int len)
-    |> List.cons (Random.int len)
-    |> List.map (fun idx -> Lines.line arr len idx)
+  [len; len; len; len]
+    |> List.map (fun mx -> mx |> Random.int |> Lines.line arr mx)
     |> String.concat "-"
     |> print_endline;
   Unix.close fd
