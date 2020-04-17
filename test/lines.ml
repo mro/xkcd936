@@ -1,4 +1,3 @@
-
 open Bigarray
 open Lib
 
@@ -32,4 +31,3 @@ let () =
   assert ("cd" = Lines.line bs l 3);
   assert ("cd" = Lines.line bs l 4);
   assert ("cd" = Lines.line bs l 5)
-
