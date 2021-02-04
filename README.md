@@ -1,6 +1,6 @@
 
 Generate random word combinations from a linefeed-separated list `words.txt` like
-e.g. from https://github.com/davidak/wortliste
+e.g. from https://codeberg.org/davidak/wortliste
 
 ```
 $ ./xkcd936
